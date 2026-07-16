@@ -13,41 +13,44 @@ body {
 
 .container {
     max-width: 900px;
-    margin: 24px auto;
+    margin: 32px auto;
     background-color: #ffffff;
     padding: 40px 48px;
-    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
     border: 1px solid #e5e7eb;
 }
 
 header {
-    text-align: left;
+    display: grid;
+    gap: 12px;
     border-bottom: 2px solid #0f4c81;
-    padding-bottom: 18px;
-    margin-bottom: 24px;
+    padding-bottom: 20px;
+    margin-bottom: 28px;
 }
 
 h1 {
-    font-size: 2rem;
-    margin-bottom: 6px;
+    font-size: 2.4rem;
     color: #0f172a;
+    letter-spacing: -0.02em;
 }
 
 .contact-info {
     font-size: 0.95rem;
-    color: #4b5563;
+    color: #475569;
+    line-height: 1.5;
 }
 
 section {
-    margin-bottom: 24px;
+    margin-bottom: 28px;
 }
 
 h2 {
     font-size: 1.05rem;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
     color: #0f4c81;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
     padding-bottom: 6px;
     border-bottom: 1px solid #dbe3ea;
 }
@@ -55,7 +58,7 @@ h2 {
 .job-entry,
 .education-entry,
 .project-entry {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .job-title,
@@ -64,42 +67,74 @@ h2 {
     font-weight: 700;
     font-size: 1rem;
     color: #111827;
+    margin-bottom: 4px;
+}
+
+.subprojects {
+    margin-top: 16px;
+    padding-left: 20px;
+    border-left: 3px solid #e5e7eb;
+}
+
+.project-entry {
+    margin-bottom: 16px;
 }
 
 .company,
 .school {
     color: #0f4c81;
     font-weight: 600;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
+    display: block;
 }
 
 .date {
     color: #6b7280;
     font-size: 0.92rem;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+p {
+    margin-bottom: 12px;
 }
 
 ul {
-    margin-left: 20px;
-    margin-top: 8px;
+    margin: 0 0 0 20px;
+    padding: 0;
 }
 
 li {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .skills-list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 .skill-tag {
     background-color: #e8f0f8;
-    padding: 6px 12px;
+    padding: 7px 14px;
     border-radius: 999px;
     font-size: 0.92rem;
     color: #0f4c81;
     border: 1px solid #d5e4f1;
+}
+
+@media (max-width: 720px) {
+    .container {
+        padding: 30px 24px;
+        margin: 16px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .skills-list {
+        justify-content: center;
+    }
 }
