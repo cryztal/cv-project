@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background-color: #f3f5f7;
+}
+
+.container {
+    max-width: 900px;
+    margin: 24px auto;
+    background-color: #ffffff;
+    padding: 40px 48px;
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+    border: 1px solid #e5e7eb;
+}
+
+header {
+    text-align: left;
+    border-bottom: 2px solid #0f4c81;
+    padding-bottom: 18px;
+    margin-bottom: 24px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 6px;
+    color: #0f172a;
+}
+
+.contact-info {
+    font-size: 0.95rem;
+    color: #4b5563;
+}
+
+section {
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-size: 1.05rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #0f4c81;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #dbe3ea;
+}
+
+.job-entry,
+.education-entry,
+.project-entry {
+    margin-bottom: 16px;
+}
+
+.job-title,
+.degree,
+.project-title {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #111827;
+}
+
+.company,
+.school {
+    color: #0f4c81;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.date {
+    color: #6b7280;
+    font-size: 0.92rem;
+    margin-bottom: 6px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.skill-tag {
+    background-color: #e8f0f8;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 0.92rem;
+    color: #0f4c81;
+    border: 1px solid #d5e4f1;
+}
