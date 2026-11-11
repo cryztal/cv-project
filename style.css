@@ -124,6 +124,56 @@ li {
     border: 1px solid #d5e4f1;
 }
 
+@page {
+    size: A4;
+    margin: 12mm;
+}
+
+@media print {
+    body {
+        background: #fff;
+        font-size: 11pt;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .container {
+        max-width: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    header {
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    section,
+    .job-entry,
+    .project-entry,
+    .education-entry {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    h1 {
+        font-size: 24pt;
+    }
+
+    h2 {
+        font-size: 11pt;
+    }
+
+    .skill-tag {
+        padding: 5px 10px;
+    }
+}
+
 @media (max-width: 720px) {
     .container {
         padding: 30px 24px;
